@@ -5,16 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e04ad0c2-2f60-4d13-b283-1d8ea2a400be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/analysis/StatisticAnalysisAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/CommonWordsSearchAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/keywords/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/keywords/SearchByKeywordsAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OPLp0dFfXAizjSMaUv2nHEfBkZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,19 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/KPI/H1'23/Parallel/lab-4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/KPI/H1'23/Parallel/lab-4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\KPI\H1'23\Parallel\lab-4" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="keywords" />
+      <recent name="common" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,7 +69,10 @@
       <option name="presentableId" value="Default" />
       <updated>1681457453071</updated>
       <workItem from="1681457454242" duration="14000" />
-      <workItem from="1682334625296" duration="922000" />
+      <workItem from="1682334625296" duration="1481000" />
+      <workItem from="1682354801070" duration="4000" />
+      <workItem from="1682695168518" duration="7843000" />
+      <workItem from="1682756189034" duration="2324000" />
     </task>
     <servers />
   </component>
