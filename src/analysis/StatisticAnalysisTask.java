@@ -37,7 +37,7 @@ public class StatisticAnalysisTask extends RecursiveTask<HashMap<Integer, Long>>
         return this.sample;
     }
 
-    private HashMap<Integer, Double> getDistributionLaw() {
+    public HashMap<Integer, Double> getDistributionLaw() {
         HashMap<Integer, Double> distributionLaw = new HashMap<>();
         double sum = 0;
         for (var entry : sample.entrySet()) {
