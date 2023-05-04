@@ -23,13 +23,12 @@ class Bank {
         notifyAll();
     }
 
-    public void printAccounts() {
+    public void printSystemSum() {
         double sum = 0;
         for (int account : accounts) {
-            System.out.print(account + " ");
             sum += account;
         }
-        System.out.println("Total: " + sum);
+        System.out.println("System sum: " + sum);
     }
 
     public int getSize() {

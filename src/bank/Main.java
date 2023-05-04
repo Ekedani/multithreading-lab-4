@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.concurrent.ForkJoinTask;
 
 public class Main {
-    public static final int BANK_SIZE = 12;
-    public static final int INITIAL_BALANCE = BANK_SIZE * 1000;
-    public static final int REPS = 3 * 1000000;
+    public static final int BANK_SIZE = 16;
+    public static final int REPS = 1000000;
+    public static final int INITIAL_BALANCE = BANK_SIZE * REPS;
     public static final boolean TESTING_FORK_JOIN = false;
 
     public static void main(String[] args) {
@@ -18,6 +18,7 @@ public class Main {
             final long threadedExecutionTime = measureThreadedApproachTime(bank);
             System.out.println("Threaded: " + threadedExecutionTime + " ns");
         }
+        bank.printSystemSum();
     }
 
     public static long measureThreadedApproachTime(Bank bank) {
