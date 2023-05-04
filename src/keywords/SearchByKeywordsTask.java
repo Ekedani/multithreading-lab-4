@@ -49,9 +49,9 @@ public class SearchByKeywordsTask extends RecursiveTask<ArrayList<String>> {
         String currentLine;
         var bufferedReader = new BufferedReader(new FileReader(textFile));
         while ((currentLine = bufferedReader.readLine()) != null) {
-            var tokens = currentLine.split("[\\s,:;.]+");
+            var tokens = currentLine.split("[\\s,:;.?!]+");
             for (var token : tokens) {
-                if (token.matches("[-'\\p{L}]+")) {
+                if (token.matches("\\p{L}[\\p{L}-']*")) {
                     words.add(token);
                 }
             }
