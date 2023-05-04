@@ -8,15 +8,15 @@ public class Main {
         final String TEXTS_DIRECTORY = "D:\\KPI\\H1'23\\Parallel\\lab-4\\data";
         var textsDirectory = new File(TEXTS_DIRECTORY);
 
-        StatisticAnalysisTask mainStatisticAnalysisTask;
+        StatisticAnalysisTask statisticAnalysisTask;
         try (var forkJoinPool = new ForkJoinPool()) {
-            mainStatisticAnalysisTask = new StatisticAnalysisTask(textsDirectory);
-            forkJoinPool.invoke(mainStatisticAnalysisTask);
+            statisticAnalysisTask = new StatisticAnalysisTask(textsDirectory);
+            forkJoinPool.invoke(statisticAnalysisTask);
         }
 
-        System.out.println("===== RANDOM VARIABLE PARAMETERS =====");
-        System.out.println("Mean: " + mainStatisticAnalysisTask.getMean());
-        System.out.println("Variance: " + mainStatisticAnalysisTask.getVariance());
-        System.out.println("Standard Derivation: " + mainStatisticAnalysisTask.getStandardDeviation());
+        System.out.println("===== STATISTIC ANALYSIS RESULT =====");
+        System.out.println("Mean: " + statisticAnalysisTask.getMean());
+        System.out.println("Variance: " + statisticAnalysisTask.getVariance());
+        System.out.println("Standard Derivation: " + statisticAnalysisTask.getStandardDeviation());
     }
 }
