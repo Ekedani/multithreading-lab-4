@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.concurrent.ForkJoinTask;
 
 public class Main {
-    public static final int BANK_SIZE = 16;
+    public static final int BANK_SIZE = 6;
     public static final int REPS = 1000000;
     public static final int INITIAL_BALANCE = BANK_SIZE * REPS;
     public static final boolean TESTING_FORK_JOIN = false;
 
     public static void main(String[] args) {
         Bank bank = new Bank(BANK_SIZE, INITIAL_BALANCE);
+        System.out.println("===== TESTING RESULT =====");
         if (TESTING_FORK_JOIN) {
             final long forkJoinExecutionTime = measureForkJoinApproachTime(bank);
             System.out.println("ForkJoin: " + forkJoinExecutionTime + " ns");

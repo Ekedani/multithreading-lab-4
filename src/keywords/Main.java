@@ -22,6 +22,7 @@ public class Main {
         }
 
         System.out.println("===== FILES WITH KEYWORDS SEARCH RESULT =====");
+        System.out.println("Keywords: " + keywords);
         for (var file : filesWithKeywords) {
             System.out.println(file);
         }
