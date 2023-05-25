@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e04ad0c2-2f60-4d13-b283-1d8ea2a400be" name="Changes" comment="Some fixes">
+    <list default="true" id="e04ad0c2-2f60-4d13-b283-1d8ea2a400be" name="Changes" comment="Imrpovements to keyword search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/OriginalBank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keywords/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keywords/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keywords/SearchByKeywordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keywords/SearchByKeywordsTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/TransferAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/TransferAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/TransferThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/TransferThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -64,7 +66,7 @@
       <recent name="common" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.keywords.Main">
+  <component name="RunManager" selected="Application.bank.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="analysis.Main" />
       <module name="lab-4" />
@@ -83,7 +85,7 @@
       <module name="lab-4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bank.*" />
+          <option name="PATTERN" value="bank.OriginalBank" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,9 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bank.Main" />
         <item itemvalue="Application.keywords.Main" />
         <item itemvalue="Application.common.Main" />
-        <item itemvalue="Application.bank.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -147,7 +149,7 @@
       <workItem from="1683873213074" duration="6000" />
       <workItem from="1684487405143" duration="1304000" />
       <workItem from="1684503875455" duration="1238000" />
-      <workItem from="1685000195448" duration="2030000" />
+      <workItem from="1685000195448" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="Added some code to begin with">
       <created>1682758548920</created>
@@ -212,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683292554364</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Imrpovements to keyword search">
+      <created>1685002922502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685002922502</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +237,7 @@
     <MESSAGE value="Implemented ForkJoin bank" />
     <MESSAGE value="Implemented SerialAnalysisTask" />
     <MESSAGE value="Some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some fixes" />
+    <MESSAGE value="Imrpovements to keyword search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Imrpovements to keyword search" />
   </component>
 </project>

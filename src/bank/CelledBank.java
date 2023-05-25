@@ -2,7 +2,7 @@ package bank;
 
 import java.util.Arrays;
 
-public class CelledBank {
+public class CelledBank implements Bank {
     private final Cell[] accounts;
 
     public CelledBank(int size, int initialBalance) {

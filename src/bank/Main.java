@@ -7,10 +7,10 @@ public class Main {
     public static final int BANK_SIZE = 1000;
     public static final int REPS = 100000;
     public static final int INITIAL_BALANCE = BANK_SIZE * REPS;
-    public static final boolean TESTING_FORK_JOIN = false;
+    public static final boolean TESTING_FORK_JOIN = true;
 
     public static void main(String[] args) {
-        Bank bank = new Bank(BANK_SIZE, INITIAL_BALANCE);
+        Bank bank = new OriginalBank(BANK_SIZE, INITIAL_BALANCE);
         System.out.println("===== TESTING RESULT =====");
         if (TESTING_FORK_JOIN) {
             final long forkJoinExecutionTime = measureForkJoinApproachTime(bank);
