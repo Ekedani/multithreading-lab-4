@@ -25,7 +25,8 @@ public class Main {
         System.out.println("Keywords: " + keywords);
         for (var entry : filesWithKeywordsStatistics.entrySet()) {
             System.out.print(entry.getKey() + " : ");
-            System.out.println(entry.getValue());
+            System.out.print(entry.getValue());
+            System.out.println(" (match " + (entry.getValue().size() * 100 / keywords.size())  + "%)");
         }
         System.out.println("Total files with keywords found: " + filesWithKeywordsStatistics.size());
     }
