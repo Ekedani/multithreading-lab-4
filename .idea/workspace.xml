@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e04ad0c2-2f60-4d13-b283-1d8ea2a400be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analysis/StatisticAnalysisAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/CommonWordsSearchAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/keywords/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/keywords/SearchByKeywordsAction.java" afterDir="false" />
+    <list default="true" id="e04ad0c2-2f60-4d13-b283-1d8ea2a400be" name="Changes" comment="Some fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analysis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analysis/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keywords/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keywords/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keywords/SearchByKeywordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/keywords/SearchByKeywordsTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +39,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/KPI/H1'23/Parallel/lab-4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/KPI/H1'23/Parallel/lab-5&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -52,13 +48,83 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\KPI\H1'23\Parallel\lab-4\data\16" />
+      <recent name="D:\KPI\H1'23\Parallel\lab-4\data\12" />
+      <recent name="D:\KPI\H1'23\Parallel\lab-4\data\8" />
+      <recent name="D:\KPI\H1'23\Parallel\lab-4\data\4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\KPI\H1'23\Parallel\lab-4\data\4" />
       <recent name="D:\KPI\H1'23\Parallel\lab-4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bank.threaded" />
       <recent name="keywords" />
       <recent name="common" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.keywords.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="analysis.Main" />
+      <module name="lab-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="analysis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bank.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bank.Main" />
+      <module name="lab-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="common.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="common.Main" />
+      <module name="lab-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="keywords.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="keywords.Main" />
+      <module name="lab-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keywords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.keywords.Main" />
+        <item itemvalue="Application.common.Main" />
+        <item itemvalue="Application.bank.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,11 +138,96 @@
       <workItem from="1682334625296" duration="1481000" />
       <workItem from="1682354801070" duration="4000" />
       <workItem from="1682695168518" duration="7843000" />
-      <workItem from="1682756189034" duration="2324000" />
+      <workItem from="1682756189034" duration="3482000" />
+      <workItem from="1682760141303" duration="8926000" />
+      <workItem from="1683021676102" duration="28000" />
+      <workItem from="1683191429516" duration="27536000" />
+      <workItem from="1683290463232" duration="6876000" />
+      <workItem from="1683821889659" duration="3371000" />
+      <workItem from="1683873213074" duration="6000" />
+      <workItem from="1684487405143" duration="1304000" />
+      <workItem from="1684503875455" duration="1238000" />
+      <workItem from="1685000195448" duration="2030000" />
     </task>
+    <task id="LOCAL-00001" summary="Added some code to begin with">
+      <created>1682758548920</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682758548920</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented StatisticAnalysisTask">
+      <created>1683199569937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683199569937</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented CommonWordsSearchTask">
+      <created>1683203971552</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683203971552</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented SearchByKeywordsTask">
+      <created>1683205541543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683205541543</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added pretty output for distribution law">
+      <created>1683206213068</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683206213068</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed word matching for all files">
+      <created>1683210443309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683210443309</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implemented ForkJoin bank">
+      <created>1683229635743</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683229635743</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented SerialAnalysisTask">
+      <created>1683231182671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683231182671</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Some fixes">
+      <created>1683292554364</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683292554364</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added some code to begin with" />
+    <MESSAGE value="Implemented StatisticAnalysisTask" />
+    <MESSAGE value="Implemented CommonWordsSearchTask" />
+    <MESSAGE value="Implemented SearchByKeywordsTask" />
+    <MESSAGE value="Added pretty output for distribution law" />
+    <MESSAGE value="Fixed word matching for all files" />
+    <MESSAGE value="Implemented ForkJoin bank" />
+    <MESSAGE value="Implemented SerialAnalysisTask" />
+    <MESSAGE value="Some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some fixes" />
   </component>
 </project>

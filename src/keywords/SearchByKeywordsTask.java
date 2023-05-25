@@ -1,19 +1,18 @@
 package keywords;
 
-import common.CommonWordsSearchTask;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.RecursiveTask;
 
-public class SearchByKeywordsTask extends RecursiveTask<ArrayList<String>> {
+public class SearchByKeywordsTask extends RecursiveTask<HashMap<String, HashMap<String, Long>>> {
     final File textFile;
     final ArrayList<String> keywords;
-    final ArrayList<String> foundFiles = new ArrayList<>();
+    final HashMap<String, HashMap<String, Long>> foundFilesStatistics = new HashMap<>();
 
     public SearchByKeywordsTask(File textFile, ArrayList<String> keywords) {
         this.textFile = textFile;
@@ -21,7 +20,7 @@ public class SearchByKeywordsTask extends RecursiveTask<ArrayList<String>> {
     }
 
     @Override
-    protected ArrayList<String> compute() {
+    protected HashMap<String, HashMap<String, Long>> compute() {
         if (textFile.isDirectory()) {
             List<SearchByKeywordsTask> subTasks = new ArrayList<>();
             var subFiles = textFile.listFiles();
@@ -32,7 +31,7 @@ public class SearchByKeywordsTask extends RecursiveTask<ArrayList<String>> {
                 subTask.fork();
             }
             for (var subTask : subTasks) {
-                this.foundFiles.addAll(subTask.join());
+                this.foundFilesStatistics.putAll(subTask.join());
             }
         } else {
             try {
@@ -41,7 +40,7 @@ public class SearchByKeywordsTask extends RecursiveTask<ArrayList<String>> {
                 throw new RuntimeException(e);
             }
         }
-        return this.foundFiles;
+        return this.foundFilesStatistics;
     }
 
     private List<String> getWords() throws IOException {
@@ -60,12 +59,20 @@ public class SearchByKeywordsTask extends RecursiveTask<ArrayList<String>> {
     }
 
     private void processTextFile() throws IOException {
+        HashMap<String, Long> keywordsSample = new HashMap<>();
         var words = this.getWords();
         for (var word : words) {
-            if (keywords.contains(word.toLowerCase())) {
-                foundFiles.add(this.textFile.getAbsolutePath());
-                return;
+            var normalizedWord = word.toLowerCase();
+            if (keywords.contains(normalizedWord)) {
+                if (keywordsSample.containsKey(normalizedWord)) {
+                    keywordsSample.put(normalizedWord, keywordsSample.get(normalizedWord) + 1);
+                } else {
+                    keywordsSample.put(normalizedWord, 1L);
+                }
             }
+        }
+        if (!keywordsSample.isEmpty()) {
+            foundFilesStatistics.put(textFile.getAbsolutePath(), keywordsSample);
         }
     }
 }
