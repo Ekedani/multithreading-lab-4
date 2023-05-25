@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.concurrent.ForkJoinTask;
 
 public class Main {
-    public static final int BANK_SIZE = 6;
-    public static final int REPS = 1000000;
+    public static final int BANK_SIZE = 1000;
+    public static final int REPS = 100000;
     public static final int INITIAL_BALANCE = BANK_SIZE * REPS;
     public static final boolean TESTING_FORK_JOIN = false;
 
